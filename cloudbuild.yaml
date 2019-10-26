@@ -25,10 +25,10 @@ steps:
     args:
       - functions
       - deploy
-      - service-offering-notification-publisher
+      - provider-delete-notification-publisher
       - --source=.
-      - "--trigger-event=providers/cloud.firestore/eventTypes/document.write"
-      - "--trigger-resource=projects/sweng-581-capstone/databases/(default)/documents/ServiceProvider/{providerId}/services/{serviceId}"
+      - "--trigger-event=providers/cloud.firestore/eventTypes/document.delete"
+      - "--trigger-resource=projects/sweng-581-capstone/databases/(default)/documents/ServiceProvider/{providerId}"
       - --runtime=nodejs10
       - --region=us-central1
       - --env-vars-file=gcloud-env.yaml
