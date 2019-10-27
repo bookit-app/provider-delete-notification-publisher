@@ -60,4 +60,30 @@ describe('provider-delete-notification-publisher: unit tests', () => {
       ).to.be.true;
     });
   });
+
+  it('should publish a message with an empty ownerUid', () => {
+    const notification = {
+      providerId: '10001',
+      ownerUid: ''
+    };
+
+    const data = {
+      oldValue: {
+        createTime: '2019-10-25T14:48:48.021215Z',
+        fields: {},
+        updateMask: {},
+        value: {},
+        name:
+          'projects/sweng-581-capstone/databases/(default)/documents/ServiceProvider/10001',
+        updateTime: '2019-10-25T14:48:48.021215Z'
+      }
+    };
+
+    expect(processor(data, context, topic)).to.be.fulfilled.then(() => {
+      expect(topic.publish.called).to.be.true;
+      expect(
+        topic.publish.calledWith(Buffer.from(JSON.stringify(notification)))
+      ).to.be.true;
+    });
+  });
 });
