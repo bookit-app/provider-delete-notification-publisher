@@ -1,6 +1,6 @@
 {
   "name": "provider-delete-notification-publisher",
-  "description": "Cloud Function which generate a PubSub notification based on the Firestore delete trigger",
+  "description": "Cloud Function which generates a PubSub notification based on the Firestore delete trigger",
   "main": "src/index.js",
   "scripts": {
     "start": "functions-framework --source src/index.js --target=publishNotification",
