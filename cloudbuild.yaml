@@ -28,8 +28,8 @@ steps:
       - provider-delete-notification-publisher
       - --source=.
       - "--trigger-event=providers/cloud.firestore/eventTypes/document.delete"
-      - "--trigger-resource=projects/sweng-581-capstone/databases/(default)/documents/ServiceProvider/{providerId}"
+      - "--trigger-resource=projects/bookit-app-260021/databases/(default)/documents/ServiceProvider/{providerId}"
       - --runtime=nodejs10
-      - --region=us-central1
+      - --region=us-east1
       - --env-vars-file=gcloud-env.yaml
       - --entry-point=publishNotification

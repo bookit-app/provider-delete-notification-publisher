@@ -1,4 +1,5 @@
 [![Coverage Status](https://coveralls.io/repos/github/bookit-app/provider-delete-notification-publisher/badge.svg?branch=master)](https://coveralls.io/github/bookit-app/provider-delete-notification-publisher?branch=master)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c8911f5883134b2f8e911b4c2d4d61e6)](https://www.codacy.com/gh/bookit-app/provider-delete-notification-publisher?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bookit-app/provider-delete-notification-publisher&amp;utm_campaign=Badge_Grade)
 
 # provider-delete-notification-publisher
 
